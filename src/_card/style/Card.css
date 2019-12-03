@@ -1,10 +1,10 @@
 :root{
-    --main-color: rgb(72, 184, 106);
- /* rgba(8,94,0,1) */
+    --main-color:blue;
+ 
 }
 
 .main-card{
-
+    background-color: white;
    width: 63mm;
    min-height: 88mm;
    max-height: 150mm;
