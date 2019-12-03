@@ -1,19 +1,15 @@
 .main-card{
 
-    width: 63mm;
-    height: 88mm;
+   width: 63mm;
+   min-height: 88mm;
+   max-height: 150mm;
    
     border: 5px solid rgb(72, 184, 106);
     border-radius: 25px;
+    box-shadow: 6px 20px 50px -30px rgba(8,94,0,1);
+
 }
-.name{
-    font: larger Lato, Roboto, sans-serif; font-style: normal;
-    position:relative; left: 10px; bottom:31px;
-    display:inline-block;
-    padding-left : 10px;
-    padding-right : 10px;
-    background: linear-gradient(0.25turn, rgba(0,0,0,0) 1%, white 10%, white 90%,rgba(0,0,0,0) 99%);
-}
+
 
 .profile-pic{
 
@@ -29,5 +25,40 @@ bottom:50px;
     border: 5px solid rgb(72, 184, 106);
     margin: -5px;
     border-radius: 25px;
-   
+}
+
+.description-text{
+    margin: 1em;
+    padding-bottom: 1em; 
+    line-height: 1.2em;
+    height: 12em; 
+    text-align: justify;  
+    position: relative;
+    overflow: hidden;
+    }
+
+    .description-text:after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 1.2em;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+      }
+      
+.basic-text{
+    font: larger Lato, Roboto, sans-serif; font-style: normal;
+    font-size: medium;
+    color: rgb(59, 59, 59);
+}
+
+.name{
+    font-size: larger;
+    position:relative; left: 10px; bottom:31px;
+    display:inline-block;
+    padding-left : 10px;
+    padding-right : 10px;
+    background: linear-gradient(0.25turn, rgba(0,0,0,0) 1%, white 10%, white 90%,rgba(0,0,0,0) 99%);
 }
