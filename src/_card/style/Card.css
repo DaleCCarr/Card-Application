@@ -1,18 +1,22 @@
+:root{
+    --main-color: rgb(72, 184, 106);
+ /* rgba(8,94,0,1) */
+}
+
 .main-card{
 
    width: 63mm;
    min-height: 88mm;
    max-height: 150mm;
-   
-    border: 5px solid rgb(72, 184, 106);
+   /*  */
+    border: 5px solid  var(--main-color);
     border-radius: 25px;
-    box-shadow: 6px 20px 50px -30px rgba(8,94,0,1);
+    box-shadow: 6px 20px 50px -30px  var(--main-color);
 
 }
 
 
 .profile-pic{
-
 display: block;
 position:relative; 
 bottom:50px;
@@ -22,7 +26,9 @@ bottom:50px;
 }
 
 .inner-outline{
-    border: 5px solid rgb(72, 184, 106);
+
+    /* rgb(72, 184, 106) */
+    border: 5px solid  var(--main-color);
     margin: -5px;
     border-radius: 25px;
 }
@@ -31,7 +37,7 @@ bottom:50px;
     margin: 1em;
     padding-bottom: 1em; 
     line-height: 1.2em;
-    height: 12em; 
+    max-height: 12em; 
     text-align: justify;  
     position: relative;
     overflow: hidden;

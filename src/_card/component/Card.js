@@ -1,18 +1,23 @@
 import React from 'react';
 import '../style/Card.css';
-import defaultPic from '../resources/jigglypuff.png'
 
-function Card() {
+
+function Card(props) {
   return (
     <div className="main-card">
+      <style>{
+        `:root {
+             --main-color: ${props.cardInfo.colour||'red'};
+             
+              `}
+             
+            </style>
       <div className="inner-outline">
-        <p className=" basic-text name">Dale Carr</p>
-        <img className= "profile-pic" src={defaultPic} alt = "profile picture for the user"/>
-        </div>
-        <p className= "description-text basic-text">Tackle matey ballast rum nipperkin doubloon cutlass fore hempen halter lanyard. Mutiny gally rutters run a shot across the bow Sail ho cutlass reef sails driver salmagundi sutler. Rope's end case shot poop deck topgallant Gold Road grog reef pinnace rum jury mast.
-        Tackle matey ballast rum nipperkin doubloon cutlass fore hempen halter lanyard. Mutiny gally rutters run a shot across the bow Sail ho cutlass reef sails driver salmagundi sutler. Rope's end case shot poop deck topgallant Gold Road grog reef pinnace rum jury mast.
-        Tackle matey ballast rum nipperkin doubloon cutlass fore hempen halter lanyard. Mutiny gally rutters run a shot across the bow Sail ho cutlass reef sails driver salmagundi sutler. Rope's end case shot poop deck topgallant Gold Road grog reef pinnace rum jury mast.
-        </p>
+        <p className=" basic-text name">{props.cardInfo.title}</p>
+        <img className="profile-pic" src={props.cardInfo.profile_picture} alt="profile picture for the user" />
+      </div>
+      <p className="description-text basic-text">{props.cardInfo.description}
+      </p>
 
     </div>
   );
